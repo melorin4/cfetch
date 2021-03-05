@@ -1,0 +1,2 @@
+#!/bin/bash
+sh /usr/share/cfetch/cfetch.sh
