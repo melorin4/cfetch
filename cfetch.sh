@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # CFetch, made by melorin4 
 # https://github.com/melorin4/cfetch
 # Enjoy! :)
