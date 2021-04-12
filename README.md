@@ -32,7 +32,6 @@ $ sudo cp PATH/TO/cfetch /usr/local/bin
 - Run CFetch
 ```sh
 $ cfetch
-
+```
 # License
 cFetch is licensed under MIT. 
-[Read here for more.](LICENSE)
