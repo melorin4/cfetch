@@ -11,6 +11,7 @@
 
 <div align="center">
 <img src="https://cdn.discordapp.com/attachments/831117302678159360/831124169604464650/Webp.net-gifmaker.gif"><br><br>
+<img src="https://media.discordapp.net/attachments/831117302678159360/831133903623815178/unknown.png"><br><br>
 </div>
 
 # Installation
