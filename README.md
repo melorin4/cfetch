@@ -1,7 +1,17 @@
-# cFetch | A simple fetch tool written in bash
+<div align="center">
+	<h1> cFetch | A simple fetch tool written in bash</h1>
+	<blockquote>
+	A simple and aesthetically pleasing system information fetch tool for Linux. 
+	</blockquote><p align="center">
+		<a href="https://github.com/melorin4/cfetch/issues?q=is%3Aissue+is%3Aopen"><img src="https://img.shields.io/github/issues/melorin4/cfetch?color=pink" alt="help wanted"></a>
+		<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+	</p>
+</div>
 
-![alt text](https://cdn.discordapp.com/attachments/831117302678159360/831124169604464650/Webp.net-gifmaker.gif)
 
+<div align="center">
+<img src="https://cdn.discordapp.com/attachments/831117302678159360/831124169604464650/Webp.net-gifmaker.gif"><br><br>
+</div>
 
 # Installation
 - Clone this repository.
@@ -22,7 +32,7 @@ $ sudo cp PATH/TO/cfetch /usr/local/bin
 - Run CFetch
 ```sh
 $ cfetch
-```
 
-#### That's it!
-#### Feel free to open up an issue if anything goes wrong :)
+# License
+cFetch is licensed under MIT. 
+[Read here for more.](LICENSE)
