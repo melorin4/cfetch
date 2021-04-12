@@ -1,6 +1,6 @@
 # CFetch | A simple fetch tool written in bash
 
-![alt text](https://cdn.discordapp.com/attachments/804242247826145300/817303571527499796/cfetch.png)
+![alt text](https://cdn.discordapp.com/attachments/831117302678159360/831124169604464650/Webp.net-gifmaker.gif)
 
 
 # Installation
