@@ -31,7 +31,7 @@ RAM_USED=$(echo $((`cat /proc/meminfo | grep MemAvailable | awk '{print $2}'`/10
 RAM_USED=$(echo $((RAM-RAM_USED)))
 DESKTOP_ENVIRONMENT=$(echo $DESKTOP_SESSION)
 HOSTNAME=`cat /etc/hostname`
-KERNEL=`uname -r`
+KERNEL=`uname -r | head -c7 `
 USERNAME=$USER
 #
 #
