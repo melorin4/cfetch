@@ -25,22 +25,24 @@ DARK=$(echo '\033[01;30m')
 #
 
 . /etc/os-release
-OS="${OS:-$PRETTY_NAME}"
-RAM=$(echo "$((`cat /proc/meminfo | grep MemTotal | awk '{print $2}'`/1024))")
-RAM_USED=$(echo $((`cat /proc/meminfo | grep MemAvailable | awk '{print $2}'`/1024)))
-RAM_USED=$(echo $((RAM-RAM_USED)))
-DESKTOP_ENVIRONMENT=$(echo $DESKTOP_SESSION)
-HOSTNAME=`cat /etc/hostname`
-KERNEL=`uname -r | head -c7 `
-USERNAME=$USER
+OS="${OS:-$NAME}"
+RAM_TOTAL_BYTES=$(grep MemTotal /proc/meminfo | awk '{print $2}')
+RAM_AVAIL_BYTES=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
+
+RAM_TOTAL=$((RAM_TOTAL_BYTES / 1024))
+RAM_AVAIL=$((RAM_AVAIL_BYTES / 1024))
+RAM_USED=$((RAM_TOTAL - RAM_AVAIL))
+
+HOSTNAME=$(cat /etc/hostname)
+KERNEL=$(uname -r | head -c7)
 #
 #
 echo "${GREEN}╭╔═════════════════════════════════╗"╮
-echo "${GREEN}╫║ ${ORANGE}λ ${LYELLOW}$HOSTNAME${WHITE}\t$USERNAME""\t\t"${GREEN} ${ORANGE}Λ ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}λ ${LYELLOW}$HOSTNAME${WHITE}\t$USER""\t\t"${GREEN} ${ORANGE}Λ ${GREEN}║╫
 echo "${GREEN}╫║ ${ORANGE}ξ ${LYELLOW}os${WHITE}\t\t$OS""\t\t"${GREEN}               ${ORANGE}Ξ ${GREEN}║╫
-echo "${GREEN}╫║ ${ORANGE}π ${LYELLOW}wm/de${WHITE}\t$DESKTOP_ENVIRONMENT""\t"${GREEN}          ${ORANGE}Π ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}π ${LYELLOW}wm/de${WHITE}\t$DESKTOP_SESSION""\t"${GREEN}          ${ORANGE}Π ${GREEN}║╫
 echo "${GREEN}╫║ ${ORANGE}ψ ${LYELLOW}kernel${WHITE}\t$KERNEL""\t\t"${GREEN}          ${ORANGE}Ψ ${GREEN}║╫
-echo "${GREEN}╫║ ${ORANGE}ω ${LYELLOW}ram${WHITE}\t""$RAM_USED"M / "$RAM"M"\t"${GREEN} ${ORANGE}ω ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}ω ${LYELLOW}ram${WHITE}\t""$RAM_USED"M / "$RAM_TOTAL"M"\t"${GREEN} ${ORANGE}ω ${GREEN}║╫
 echo "${GREEN}╰╚═════════════════════════════════╝"╯
 #
 #
