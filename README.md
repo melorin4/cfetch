@@ -30,7 +30,7 @@ $ sudo mkdir /usr/share/cfetch
 $ sudo cp PATH/TO/cfetch.sh /usr/share/cfetch
 $ sudo cp PATH/TO/cfetch /usr/local/bin
 ```
-- Run CFetch
+- Run cFetch
 ```sh
 $ cfetch
 ```
