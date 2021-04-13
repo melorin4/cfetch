@@ -34,7 +34,7 @@ RAM_AVAIL=$((RAM_AVAIL_BYTES / 1024))
 RAM_USED=$((RAM_TOTAL - RAM_AVAIL))
 
 HOSTNAME=$(cat /etc/hostname)
-KERNEL=$(uname -r | head -c7)
+KERNEL=$(uname -r | cut -d"-" -f1)
 #
 #
 echo "${GREEN}╭╔═════════════════════════════════╗"╮
