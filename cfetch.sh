@@ -1,8 +1,6 @@
-#!/usr/bin/env bash
-# CFetch, made by melorin4 
 # https://github.com/melorin4/cfetch
-
-# colours
+# Enjoy! :)
+#COLOURS
 RESTORE=$(echo '\033[0m')
 RED=$(echo '\033[00;31m')
 GREEN=$(echo '\033[00;32m')
@@ -34,15 +32,15 @@ RAM_AVAIL=$((RAM_AVAIL_BYTES / 1024))
 RAM_USED=$((RAM_TOTAL - RAM_AVAIL))
 
 HOSTNAME=$(cat /etc/hostname)
-KERNEL=$(uname -r | cut -d"-" -f1)
+KERNEL=$(uname -r | head -c7)
 #
 #
 echo "${GREEN}╭╔═════════════════════════════════╗"╮
 echo "${GREEN}╫║ ${ORANGE}λ ${LYELLOW}$HOSTNAME${WHITE}\t$USER""\t\t"${GREEN} ${ORANGE}Λ ${GREEN}║╫
-echo "${GREEN}╫║ ${ORANGE}ξ ${LYELLOW}os${WHITE}\t\t$OS""\t\t"${GREEN}               ${ORANGE}Ξ ${GREEN}║╫
-echo "${GREEN}╫║ ${ORANGE}π ${LYELLOW}wm/de${WHITE}\t$DESKTOP_SESSION""\t"${GREEN}          ${ORANGE}Π ${GREEN}║╫
-echo "${GREEN}╫║ ${ORANGE}ψ ${LYELLOW}kernel${WHITE}\t$KERNEL""\t"${GREEN}          ${ORANGE}Ψ ${GREEN}║╫
-echo "${GREEN}╫║ ${ORANGE}ω ${LYELLOW}ram${WHITE}\t""$RAM_USED"M / "$RAM_TOTAL"M"\t"${GREEN} ${ORANGE}ω ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}ξ ${LYELLOW}os ${WHITE}\t$OS""\t\t"${GREEN}               ${ORANGE}Ξ ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}π ${LYELLOW}wm/de ${WHITE}\t$DESKTOP_SESSION""\t"${GREEN}          ${ORANGE}Π ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}ψ ${LYELLOW}kernel ${WHITE}\t$KERNEL""\t\t"${GREEN}${ORANGE} Ψ ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}ω ${LYELLOW}ram ${WHITE}\t""$RAM_USED"M / "$RAM_TOTAL"M"\t"${GREEN} ${ORANGE}ω ${GREEN}║╫
 echo "${GREEN}╰╚═════════════════════════════════╝"╯
 #
 #
