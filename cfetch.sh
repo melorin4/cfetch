@@ -41,7 +41,7 @@ echo "${GREEN}╭╔════════════════════
 echo "${GREEN}╫║ ${ORANGE}λ ${LYELLOW}$HOSTNAME${WHITE}\t$USER""\t\t"${GREEN} ${ORANGE}Λ ${GREEN}║╫
 echo "${GREEN}╫║ ${ORANGE}ξ ${LYELLOW}os${WHITE}\t\t$OS""\t\t"${GREEN}               ${ORANGE}Ξ ${GREEN}║╫
 echo "${GREEN}╫║ ${ORANGE}π ${LYELLOW}wm/de${WHITE}\t$DESKTOP_SESSION""\t"${GREEN}          ${ORANGE}Π ${GREEN}║╫
-echo "${GREEN}╫║ ${ORANGE}ψ ${LYELLOW}kernel${WHITE}\t$KERNEL""\t\t"${GREEN}          ${ORANGE}Ψ ${GREEN}║╫
+echo "${GREEN}╫║ ${ORANGE}ψ ${LYELLOW}kernel${WHITE}\t$KERNEL""\t"${GREEN}          ${ORANGE}Ψ ${GREEN}║╫
 echo "${GREEN}╫║ ${ORANGE}ω ${LYELLOW}ram${WHITE}\t""$RAM_USED"M / "$RAM_TOTAL"M"\t"${GREEN} ${ORANGE}ω ${GREEN}║╫
 echo "${GREEN}╰╚═════════════════════════════════╝"╯
 #
