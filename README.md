@@ -10,7 +10,7 @@
 
 
 <div align="center">
-<img src="[https://media.discordapp.net/attachments/831117302678159360/831133903623815178/unknown.png](https://cdn.discordapp.com/attachments/635625758412505093/826218748955328532/unknown.png?ex=65aee9ac&is=659c74ac&hm=2c9508179ef697f8f450acec470ecd3240fb107109338debcd6d507f4c0cbc88&)"><br><br>
+<img src="https://media.discordapp.net/attachments/831117302678159360/831133903623815178/unknown.png"><br><br>
 <img src="https://cdn.discordapp.com/attachments/831117302678159360/831124169604464650/Webp.net-gifmaker.gif"><br><br>
 </div>
 
